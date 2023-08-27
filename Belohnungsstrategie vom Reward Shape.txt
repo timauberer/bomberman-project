@@ -1,0 +1,22 @@
+Belohnungsstrategie vom Reward Shaping:
+
+Gewichte: 	Aktion:
+
+0.4		Distanz (in Laufschritten auf dem kürzesten Weg) zum nahegelegensten erreichbaren Coin verringert
+0.2		Mittlere Distanz zu allen aufgedeckten, erreichbaren Coins verringert
+0.5		Mittlere Distanz zu erreichbaren Coins verringert, die zu keinem Gegner eine kleinere Distanz haben, als zu dir selbst
+0.05		Im early Game (weniger als 80% der Kisten zerstört): Falls Gegner in weniger als 6 Tiles Distanz ist, Abstand zu ihm erhöht (um Kämpfe zu vermeiden)
+0.1		Im late Game (nach early Game): Distanz zu Gegner verringert, in dessen Umgebung von 6 Tiles ein anderer Gegner ist (um bei Zweikämpfen abzustauben)
+0.03		Im late Game: Falls kein Gegner in weniger als 6 Tiles range, durchschnittliche Distanz zu Gegnern verringert
+0.1		Im late Game: Falls kein Gegner in weniger als 6 Tiles range, Distanz zur ursprünglichen Position des nächsten Gegners verringert
+0.05		Falls zwei Gegner (jeweils höchstens 6 Tiles entfernt) von verschiedenen Richtungen (kleinster Winkel zwischen Ortsvektoren mit Ursprung in eigenem Agenten größer gleich 90°) beide einen Schritt in die Richtung unseres Agenten gemacht haben, dann das Weite suchen (Schritt in Richtung machen, aus der kein Agent kommt) (siehe Skizze) (um Trapping zu vermeiden)
+0.2		Bombe gedropt, die einen Gegner in seiner aktuellen Position auslöschen würde
+0.1		Falls in Reichweite von Bombe: Sich von Bombe wegbewegt
+-0.5		Falls in Reichweite von Bombe: Sich zu Bombe hinbewegt
+0.2		Falls in Reichweite von Bombe und an Kreuzung: Orthogonal zur Ausbreitungsrichtung der Schockwelle der Bombe abgebogen (also sich hinter einem Felsen gerettet)
+0.15		Kiste zerstört
+1		Coin gesammelt
+5		Gegner selbst getötet (Aggressivität senken, je nach Münzcounter)
+-1		Gegner wurde von anderem Gegner getötet (ggf Aggressivität erhöhen)
+1.5		Gegner hat sich selbst ausgelöscht (ggf Aggressivität senken)
+		

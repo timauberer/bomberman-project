@@ -1,0 +1,17 @@
+Agent-Namen: Kim Jong-un, Kim Jong-il, Kim Il-sung, Kim Hyong-jik, Kim Bo-hyon
+Agent-Icons: Strich-Skizzen der Köpfe der entsprechenden Leute
+Bomben-Icons: Atombomben
+
+Team-Name: Team North Korea
+
+-----------------------------------------------------------------------------------------------
+
+Team-Name: Team Red Button
+
+Agent-Namen: Kim Jong-un, Donald Trump, Vladimir Putin, etc...
+Agent-Icons: Strich-Skizzen der Köpfe der entsprechenden Leute
+Bomben-Icons: Atombomben
+
+-----------------------------------------------------------------------------------------------
+
+Kexplosive
